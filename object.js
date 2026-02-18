@@ -89,7 +89,7 @@ Create an object mobile and print all its keys and values using built-in methods
 
 let mobile={
     name:"samsung",
-    version:2.0,
+    version:2.6,
     price:80000
 }
 
@@ -190,12 +190,16 @@ const employeeInfo={
     name:"ganga",
     salary:30000
 }
-for(let key in employeeInfo){
-    if(key=="salary"){
-        console.log(employeeInfo[key]);
-        
-    }
+
+if('salary' in employeeInfo){
+    console.log("salary exists");
+    
 }
+else{
+    console.log("salary not exists");
+    
+}
+
 //6. Create an object product and delete the discount property using delete. 
 
 
@@ -225,10 +229,23 @@ for(let key in userInfo){
 //8. Create an object dog with breed and age. Print "Puppy" if age < 2. 
 
 const dog={
-    breed:"puppy",
-    age:5
+    breed:"corien",
+    age:1
 }
-//9. Create an object calculator with two numbers and print their sum.
+
+if(dog.age<2){
+
+ console.log("puppy");
+   
+}
+// //9. Create an object calculator with two numbers and print their sum.
+const calculatorInfo={
+    a:10,
+    b:10
+
+}
+console.log(calculatorInfo.a+calculatorInfo.b);
+
 
 
 //10. Create an object person with firstName and lastName. Print full name. 
@@ -264,17 +281,21 @@ const bike={
     name:"Royal Enfield",
     color:"black"
 }
-const checked="color" in bike;   // in using this quotation iside bacause no consider the variable
- 
-console.log(checked);
+if('color' in bike){
+    console.log("bike inside the color property");
+}
+else{
+    console.log("bike color not property");
+    
+}
 
-//13. Create an object movie with title and rating. Print "Hit" if rating 
+//. Create an object movie with title and rating. Print "Hit" if rating > 8.
 
 const movie={
     title:"sarvam",
     rating:10
 }
-if(movie.rating){
+if(movie.rating>8){
     console.log("hit");
 }
 else{
@@ -294,9 +315,17 @@ console.log(account);
 //15. Create an object player with 3 stats. Print the highest stat value
 
 const player={
-    tamilNadu:88,
-
+   ciricket:99,
+   bat:75,
+   coco:98,
+   run:45
 }
+const stats=Object.values(player)
+// console.log(stats);
+
+const highest=Math.max(...stats)
+console.log(highest);
+
 //16. Create an object game and print how many keys it has. 
 
 const game={
@@ -319,7 +348,29 @@ const course={
     courseName:"mern",
     duration:6
 }
+course.duration+=4
+console.log(course.duration);
 
+
+
+// //18. Create an object teacher with name and subject. Print: "Teacher teaches subject".
+
+const teacher={
+    name:"ganga",
+    subject:"english"
+}
+console.log(`${teacher.name} teaches ${teacher.subject}`);
+
+
+ 
+// //19. Create an object settings with theme and fontSize. Change theme to "dark". 
+
+const settings={
+    theme:"light",
+    fontSize:45
+}
+settings.theme="dark";
+console.log(settings);
 
 
 
