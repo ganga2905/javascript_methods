@@ -390,3 +390,17 @@ else{
     console.log("cheap");
     
 }
+
+
+
+//looping over object by converting to an array;
+
+const details={
+    name:"ganga",
+    age:21,
+    city:"ramnad"
+}
+let arr_key=Object.keys(details);
+console.log(arr_key);
+
+let arr_values=Object.values(details);
