@@ -98,7 +98,7 @@ function even(num){
 }
 console.log(even([1,2,4,50,40,30,20,54,42]));
 
-*/
+
 // 7. Reverse String Function 
 // Write a function that takes a string and returns its reverse using a loop. 
 
@@ -193,3 +193,293 @@ function pattern(){
 console.log(pattern());
  
 */
+
+// evel: Very Easy
+// Write a function that prints numbers from 1 to n using for loop and if to print only even numbers.
+
+function even(n){
+    for(let i=0;i<n;i++){
+        if(i%2==0){
+          console.log(i);
+        }
+
+    }
+}
+even(10)
+
+
+
+
+
+// Write a function that prints numbers from 1 to n using while loop and if to print only odd numbers.
+
+
+function odd(n){
+    let num=1;
+    while(num<=n){
+        if(num %2!==0){
+            console.log(num);   
+        }
+        num++
+    }
+}
+odd(5)
+
+
+
+//Write a function that checks if a number is positive or negative using if else.
+
+
+function postive(n){
+    if(n>0){
+        console.log(`postive number :${n}`);
+    }
+    else {
+        console.log(`negative number :${n}`);
+        
+    }
+
+}
+postive(-10)
+
+//Write a function that prints numbers from n to 1 using for loop and if to skip number 5.
+
+
+
+function skip(n){
+    for(let i=n;i>=0;i--){
+        if(i===5){
+            continue;            
+        }
+        console.log(i);
+        
+    }
+}
+skip(10)
+
+//Write a function that prints all multiples of 3 from 1 to n using for loop and if.
+
+function multi(n){
+    for(let i=1;i<=n;i++){
+        if(i%3==0){
+            console.log("multi"+i);
+            
+        }
+        
+    }
+}
+multi(3)
+/*
+🟡 Level: Easy
+Write a function that counts how many even numbers are in an array using for loop and if.
+*/
+function eventCount(num){
+    let count=0;
+    for(let i=0;i<num.length;i++){
+        if(num[i]%2==0){
+            count++
+        }
+
+    }
+    return count
+}
+console.log(eventCount([10,2,40,45,62,35,78,98,120,12]));
+
+
+
+
+//Write a function that counts how many odd numbers are in an array using while loop and if.
+
+function oddNum(n){
+    let count=0;
+    let i=0;
+    while(i<n.length){
+        if(n[i]%2!==0){
+            count++
+        }
+        i++;
+    }
+    return count
+}
+console.log(oddNum([10,21,35,65,87,45,21,20,10,33]));
+
+
+
+
+
+//Write a function that prints only positive numbers from an array using for loop and if.
+
+function postiveNum(n){
+
+    for(let i=0;i<n.length;i++){
+        if(n[i]>0){
+            console.log(n[i]);
+            
+        }
+    }
+}
+postiveNum([10,20,-21,-100,230,-60])
+
+//Write a function that prints numbers from 1 to 50 using for loop and if to print only numbers divisible by 5.
+
+
+ function  divisionFive(n){
+    for(let i=1;i<=n;i++){
+        if(i%5==0){
+            console.log(i);
+            
+        }
+    }
+ }
+ divisionFive(50)
+
+
+//Write a function that checks if a number is divisible by 10 using if else.
+
+function checkDivi(n){
+    let ans='';
+    if(n%10===0){
+        ans='true'
+    }
+    else{
+        ans='false'
+    }
+    return ans
+}
+console.log(checkDivi(10));
+console.log(checkDivi(21));
+
+
+
+/*🟠 Level: Medium (still beginner)
+Write a function that finds the sum of even numbers from 1 to n using for loop and if.
+
+*/
+
+function sumEven(n){
+    let total=0;
+    for(let i=1;i<=n;i++){
+        if(i%2==0){
+            total+=i
+        }
+    }
+    return total;
+}
+console.log(sumEven(8));
+
+
+
+
+//Write a function that finds the sum of odd numbers from 1 to n using while loop and if.
+
+
+function sumOdd(n){
+    let total=0;
+    let num=1;
+    while(num<=n){
+        if(num%2!==0){
+            total+=num
+        }
+        num++
+    }
+    return total
+}
+console.log(sumOdd(10));
+
+
+
+//Write a function that prints numbers from 1 to n using for loop and if to skip odd numbers.
+
+function skipOdd(n){
+    for(let i=1;i<=n;i++){
+        if(i%2!==0){
+            continue;
+        }
+        console.log(i);
+        
+    }
+}
+skipOdd(10)
+
+//Write a function that prints all numbers greater than 10 from an array using for loop and if.
+
+
+function greater(num){
+    for(let i=0;i<num.length;i++){
+        if(num[i]>10){
+            console.log("greater"+num[i]);
+            
+        }
+    }
+}
+greater([10,20,32,12,11,52,65,85,3,0]);
+
+//Write a function that counts how many numbers are greater than 20 in an array using for loop and if.
+ function greaterCount(arr){
+    let count=0;
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]>20){
+            count++
+        }
+    }
+    return count;
+ }
+ console.log(greaterCount([10,20,24,52,12,32,21,200]));
+
+/*
+🟣 Level: Array + Condition + Loop
+Write a function that prints only vowels from a string using for loop and if.
+*/
+
+function vowels(name){
+    let vowel='aeiouAEIOU';
+    for(let i=0;i<name.length;i++){
+        for(let k=0;k<vowel.length;k++){
+            if(name[i]===vowel[k]){
+                console.log(name[i]);
+                
+            }
+        }
+    }
+
+}
+vowels("ganga");
+
+
+
+
+//Write a function that counts how many vowels are in a string using for loop and if.
+
+
+
+
+
+
+/*
+Write a function that prints only capital letters from a string using for loop and if.
+
+Write a function that prints only numbers from an array using for loop and if.
+
+Write a function that checks if all numbers in an array are positive using for loop and if else.
+
+🔵 Level: Slight Thinking
+Write a function that finds the largest number in an array using for loop and if.
+
+Write a function that finds the smallest number in an array using for loop and if.
+
+Write a function that counts how many times 5 appears in an array using for loop and if.
+
+Write a function that prints numbers from 1 to n using for loop and if to print only numbers divisible by both 2 and 3.
+
+Write a function that checks whether a number is prime using for loop and if.
+
+🟤 Real-Life Style Beginner Tasks
+Write a function that prints "Pass" if marks are ≥ 40 else "Fail" using if else.
+
+Write a function that prints "Child" if age < 18 else "Adult" using if else.
+
+Write a function that counts how many students scored above 60 from an array using for loop and if.
+
+Write a function that prints only long words (length > 5) from an array using for loop and if.
+
+Write a function that checks if a number is a multiple of 7 using if else.*/
