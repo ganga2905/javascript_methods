@@ -445,41 +445,234 @@ function vowels(name){
 }
 vowels("ganga");
 
-
-
-
 //Write a function that counts how many vowels are in a string using for loop and if.
 
 
+function vowelCount(str){
+    let vowel='aeiouAEIOU';
+    let count=0
+    for(let i=0;i<str.length;i++){
+        for(k=0;k<vowel.length;k++){
+            if(str[i]===vowel[k]){
+                count++
+            }
 
+        }
+    }
+    return count
+
+}
+console.log(vowelCount("aadhimilaki"));
+
+
+
+
+
+//Write a function that prints only capital letters from a string using for loop and if.
+
+function capital(str){
+    for(let i=0;i<str.length;i++){
+        if(str[i]>='A'&& str[i]<='Z'){
+            console.log(str[i]);
+            
+        }
+    }
+
+}
+capital("GANGA k")
+
+
+
+
+//Write a function that prints only numbers from an array using for loop and if.
+ 
+function numberReturn(num){
+    for(let i=0;i<num.length;i++){
+        if(typeof num[i]==='number'){
+            console.log(num[i]);
+        }
+    }
+}
+numberReturn([10,20,"trude",354,undefined])
+
+
+//Write a function that checks if all numbers in an array are positive using for loop and if else.
+function checkNum(n){
+    for(let i = 0; i < n.length; i++){
+        if(n[i] <= 0){
+            return "Not all numbers are positive";
+        }
+    }
+    return "All numbers are positive";
+}
+
+console.log(checkNum([10,20,45,98]));
+console.log(checkNum([10,20,-45,98]));
+//   function checkNum(n){
+//     for(let i=0;i<n.length;i++){
+//         if(n[i]>0){
+//             console.log("positive");
+            
+//         }
+//         else if(n[i]<0){
+//             console.log("nregative");
+            
+//         }
+//         else{
+//             console.log("zero");
+            
+//         }
+//     }
+//   }
+//   checkNum([10,20,-60,45,-87,98])
 
 
 
 /*
-Write a function that prints only capital letters from a string using for loop and if.
-
-Write a function that prints only numbers from an array using for loop and if.
-
-Write a function that checks if all numbers in an array are positive using for loop and if else.
-
 🔵 Level: Slight Thinking
 Write a function that finds the largest number in an array using for loop and if.
+*/
 
-Write a function that finds the smallest number in an array using for loop and if.
 
-Write a function that counts how many times 5 appears in an array using for loop and if.
+function largest(num){
+        let max=num[0];
+    for(let i=0;i<num.length;i++){
+        if(num[i]>max){
+            max=num[i]
+          
+        }
+    }
+          return max
+}
+console.log(largest([10,50,60,52,89,97]));
 
-Write a function that prints numbers from 1 to n using for loop and if to print only numbers divisible by both 2 and 3.
 
-Write a function that checks whether a number is prime using for loop and if.
 
+
+//Write a function that finds the smallest number in an array using for loop and if.
+
+function smallest(num){
+    let mini=num[0];
+    for(let i=0;i<num.length;i++){
+        if(num[i]<mini){
+            mini=num[i]
+        }
+    }
+    return mini
+
+}
+console.log(smallest([10,20,2,45]));
+
+
+
+
+//Write a function that counts how many times 5 appears in an array using for loop and if.
+
+function fiveCount(num){
+    let count=0;
+    for(let i=0;i<num.length;i++){
+        if(num[i]===5){
+            count++
+        }
+    }
+    return count
+}
+console.log(fiveCount([50,5,32,5,25,5,5]));
+
+
+
+//Write a function that prints numbers from 1 to n using for loop and
+//  if to print only numbers divisible by both 2 and 3.
+
+function  divi(num){
+    for(let i=0;i<num.length;i++){
+        if(i%2==0&& i%3==0){
+            console.log(i);
+            
+        }
+    }
+}
+divi(5)
+
+
+//Write a function that checks whether a number is prime using for loop and if.
+
+function prime(){
+
+}
+/*
 🟤 Real-Life Style Beginner Tasks
 Write a function that prints "Pass" if marks are ≥ 40 else "Fail" using if else.
 
-Write a function that prints "Child" if age < 18 else "Adult" using if else.
+*/
 
-Write a function that counts how many students scored above 60 from an array using for loop and if.
 
-Write a function that prints only long words (length > 5) from an array using for loop and if.
+function passFail(mark){
 
-Write a function that checks if a number is a multiple of 7 using if else.*/
+        if(mark>=40){
+            console.log("pass");
+        }
+        else{
+            console.log("fail");
+            
+        }
+}
+passFail(60)
+
+
+//Write a function that prints "Child" if age < 18 else "Adult" using if else.
+
+function agedFind(age){
+    if(age<18){
+        console.log("Child");
+    }
+    else{
+        console.log( "Adult");
+    }
+}
+agedFind(25)
+
+
+//Write a function that counts how many students scored above 60 from an array using for loop and if.
+
+function student(score){
+
+    let count=0;
+
+    for(let i=0;i<score.length;i++){
+        if(score[i]>60){
+            count++
+        }
+    }
+    return count
+}
+console.log(student([60,52,85,77,50]));
+
+
+
+//Write a function that prints only long words (length > 5) from an array using for loop and if.
+
+
+ function longWords(str){
+
+    for(let i=0;i<str.length;i++){
+         if(str[i].length>5){
+            console.log(str[i]);
+         }
+    }
+ }
+ longWords(["ganga","aadhi","gayathri","mahalaksmi"])
+
+
+
+//Write a function that checks if a number is a multiple of 7 using if else.
+
+function multiple(num){
+     if(num%7==0){
+        return true
+     }
+     else{
+        return false
+     }
+}
+console.log(multiple(11))
