@@ -1,5 +1,5 @@
-/*//1. Even or Odd Function 
-//Create a function that takes a number and prints whether it’s even or odd. 
+//1. Even or Odd Function 
+// Create a function that takes a number and prints whether it’s even or odd. 
 
 
 // function evenOrOdd(num){
