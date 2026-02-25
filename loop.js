@@ -261,14 +261,64 @@ for(let i=0;i<nump.length;i++){
 
 
 
+
+let arrRemove=[10, 20, 30, 40, 50];
+
+let outputR=[]
+
+for(let i=0;i<arrRemove.length;i++){
+    if(arrRemove[i]===30){
+        continue;
+    }
+    outputR[outputR.length]=arrRemove[i]
+
+}
+console.log(outputR);
+
+
+
+
 // 3.Replace the second element in the array [5, 10, 15] with 20.
+
+let numR=[5, 10, 15];
+let ansR=[];
+for(let i=0;i<numR.length;i++){
+    if(numR[i]===10){
+        ansR[ansR.length]=20;
+    }
+    ansR[ansR.length]=numR[i]
+}
+console.log(ansR);
+
+
+
 
 //4. Add the elements 7 and 8 at the end of the array [1, 2, 3, 4, 5].
 
+
+
+let numA=[1, 2, 3, 4, 5];
+
+let ansA=[];
+for(let i=0;i<numA.length;i++){
+   ansA[ansA.length]=numA[i]
+}
+   ansA[ansA.length]=7
+   ansA[ansA.length]=8
+console.log(ansA);
+
+
+
 //// 5.Insert the element 99 at the beginning of the array [10, 20, 30].
+
+let arrI=[10, 20, 30];
+arrI[arrI[0].length]=99
+console.log(arrI);
 
 
 // 6.Remove the last element from the array [2, 4, 6, 8, 10].
+
+
 
 
 // 7.Replace all occurrences of 5 with 50 in the array [5, 10, 5, 20, 5].
@@ -325,6 +375,19 @@ for(let i=0;i<nump.length;i++){
 
 
 
+
+let n=[1,3];
+
+let m=[2,4];
+
+let result = [];
+
+for (let i = 0; i < n.length; i++) {
+    result[result.length] = n[i];  // first array element
+    result[result.length] = m[i];  // second array element
+}
+
+console.log(result);
 
 
 
