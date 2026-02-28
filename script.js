@@ -29,7 +29,7 @@ num4.unshift(99);
 console.log(num4);
 // 6.Remove the last element from the array [2, 4, 6, 8, 10].
 let num5=[2, 4, 6, 8, 10];
-num5.shift();
+num5.pop();
 console.log(num5);
 
 // 7.Replace all occurrences of 5 with 50 in the array [5, 10, 5, 20, 5].
