@@ -120,13 +120,14 @@ const name=["ganga","gayathri","harish","aadhi","abinav","abi"];
 let count=0;
 
 for(let i=0;i<name.length;i++){
-    if(name[i][0]==='a'){
+    if(name[i].startsWith('a')){
         count++
     }
 }
 
 console.log(count);
 
+console.log("***********");
 
 
 // 4. 
@@ -165,8 +166,10 @@ console.log(output2);
 const nameG=["ganga","hari","aadhi"]; 
 const nameR=[]
 for(let i=0;i<nameG.length;i++){
-
+        nameR[nameR.length]=nameG[i].toUpperCase()
 }
+console.log(nameR);
+
 
 
 // 7. 
@@ -245,6 +248,8 @@ console.log(onlyN);
 
 
 
+console.log("--------------------");
+
 
 // 1.Given the array [1, 2, 4, 5], insert the number 3 between 4 and 5.
 
@@ -252,7 +257,7 @@ let nump=[1, 2, 4, 5];
 let resP=[]
 
 for(let i=0;i<nump.length;i++){
-    resP[resP.length]=nump[i]
+         resP[resP.length]=nump[i]
     if(nump[i]===4){
         resP[resP.length]=3
     }
@@ -267,10 +272,10 @@ for(let i=0;i<nump.length;i++){
 
 let arrRemove=[10, 20, 30, 40, 50];
 
-let outputR=[]
+let outputR=[];
 
 for(let i=0;i<arrRemove.length;i++){
-    if(arrRemove[i]===30){
+    if(arrRemove[i]===40){
         continue;
     }
     outputR[outputR.length]=arrRemove[i]
@@ -286,7 +291,7 @@ console.log(outputR);
 let numR=[5, 10, 15];
 let ansR=[];
 for(let i=0;i<numR.length;i++){
-    if(numR[i]===10){
+    if(numR[i]===15){
         ansR[ansR.length]=20;
     }
     ansR[ansR.length]=numR[i]
@@ -320,49 +325,243 @@ console.log(arrI);
 
 // 6.Remove the last element from the array [2, 4, 6, 8, 10].
 
+let arrR=[2, 4, 6, 8, 10];
+
+let indexL=arrR.indexOf(10);
+console.log(indexL);
+
+let arrR1=[];
+
+for(let i=0;i<arrR.length;i++){
+    if(i===indexL){
+        continue;
+    }
+    arrR1[arrR1.length]=arrR[i]
+
+}
+console.log(arrR1);
 
 
+let a1=[2,4,6,8,10];
+let a2=[];
+for(let i=0;i<a1.length-1;i++){
+    a2.push(a1[i])
+}
+
+console.log(a2);
 
 
 // 7.Replace all occurrences of 5 with 50 in the array [5, 10, 5, 20, 5].
 
+let a3=[5, 10, 5, 20, 5];
+let a4=[];
+
+for(let i=0;i<a3.length;i++){
+    if(a3[i]===5){
+        a4[a4.length]=50
+    }else{
+    a4[a4.length]=a3[i]
+    }
+
+}
+console.log(a4);
 
 //8 Given the array [3, 6, 9, 12, 15], insert 0 at index 2.
 
+let a5=[3, 6, 9, 12, 15];
+let a6=[];
+
+for(let i=0;i<a5.length;i++){
+     if(i==2){
+        a6[a6.length]=0
+     }
+     a6[a6.length]=a5[i]
+}
+console.log(a6);
+
+
+
+
+
 // 9.Remove all even numbers from the array [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].
+
+let a7=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+let a8=[];
+
+for(let i=0;i<a7.length;i++){
+    if(a7[i]%2===0){
+        a8[a8.length]=a7[i]
+    }
+}
+console.log(a8);
+
 
 // 10.Given the array [5, 10, 20, 30], insert 15 between 10 and 20.
 
+let a9=[5, 10, 20, 30];
+let a10=[];
+
+for(let i=0;i<a9.length;i++){
+    if(a9[i]===20){
+        a10[a10.length]=15
+    }
+    a10[a10.length]=a9[i];
+};
+console.log(a10);
+
+
+
+
+
  // 11.Remove the element at index 3 from the array [100, 200, 300, 400, 500].
+
+ let a11= [100, 200, 300, 400, 500];
+ let index=a11.indexOf(400);
+ let a12=[]
+ for(let i=0;i<a11.length;i++){
+     if(i===3){
+        continue
+     }
+     a12[a12.length]=a11[i]
+ }
+ console.log(a12);
+ 
 
  //12. Replace the last element in the array [1, 2, 3, 4, 5] with 10.
 
+ let a13=[1, 2, 3, 4, 5];
+
+a13[a13.length-1]=10;
+console.log(a13);
  
  // 13.Add the elements 8, 9, and 10 at the beginning of the array [1, 2, 3, 4, 5].
 
+ let a14=[1, 2, 3, 4, 5];
+ let a15=[];
+ let a16=[8,9,10];
+
+ for(let i=0;i<a16.length;i++){
+    a15[a15.length]=a16[i]
+ }
+ for(let i=0;i<a14.length;i++){
+    a15[a15.length]=a14[i]
+ }
+
+ console.log(a15);
+ 
 
 //14. Remove the first occurrence of 7 from the array [7, 14, 21, 7, 28].
+
+let a17=[7, 14, 21, 7, 28];
+let posi=a17.indexOf(7);
+let a18=[]
+
+for(let i=0;i<a17.length;i++){
+    if(i===posi){
+        continue
+    }
+    a18[a18.length]=a17[i]
+}
+console.log(a18);
+
 
 
 //15. Insert the elements 25 and 30 at the end of the array [10, 20].
 
+let a19=[10, 20];
+a19[a19.length]=25
+a19[a19.length]=30;
+console.log(a19);
+
+
 // 16.Replace all occurrences of 0 with 1 in the array [0, 1, 0, 1, 0].
 
+let a20=[0, 1, 0, 1, 0];
 
+let a21=[];
+
+for(let i=0;i<a20.length;i++){
+    if(a20[i]===0){
+        a21[a21.length]=1
+    }
+    else{
+        a21[a21.length]=a20[i]
+    }
+}
+console.log(a21);
 
 // 17.Given the array [5, 10, 15, 20, 25], insert 12 between 10 and 15.
 
-
+let a22= [5, 10, 15, 20, 25];
+ let a23=[];
+ for(let i=0;i<a22.length;i++){
+    if(a22[i]===15){
+        a23[a23.length]=12
+    }
+    a23[a23.length]=a22[i]
+ }
+ console.log(a23);
+ 
 // 18.Remove the second-to-last element from the array [2, 4, 6, 8, 10].
+
+let a24=[2, 4, 6, 8, 10];
+let a25=[];
+
+let removeIndex = a24.length - 2;
+
+for(let i=0;i<a24.length;i++){
+    if(i === removeIndex){
+        continue;
+    }
+    a25.push(a24[i]);
+}
+
+console.log(a25);
+
 
 // 19.Replace the element at index 1 in the array [3, 6, 9] with 12.
 
+let a26=[3, 6, 9];
+
+a26[1]=12;
+console.log(a26);
 
 //20. Add the elements 100 and 200 at the beginning of the array [300, 400, 500].
 
-//21. Remove all occurrences of 42 from the array [42, 42, 42, 42, 42].
+let a27=[300, 400, 500];
+let a28=[100,200];
+ let a29=[]
 
-//// 22.Insert the element 7 at the end of the array [1, 2, 3, 4, 5, 6].
+ for(let i=0;i<a28.length;i++){
+    a29[a29.length]=a28[i]
+ }
+
+ for(let i=0;i<a27.length;i++){
+    a29[a29.length]=a27[i]
+ }
+console.log(a29);
+
+//21.Remove all occurrences of 42 from the array [42, 42, 42, 42, 42].
+
+
+let a30=[42, 42, 42, 42, 42];
+let a31=[];
+
+
+for(let i=0;i<a30.length;i++){
+    if(a30[i]!==42){
+        a31[a31.length]=a30[i]
+    }
+}
+console.log(a31);
+
+// 22.Insert the element 7 at the end of the array [1, 2, 3, 4, 5, 6].
+
+
+
+
+
 //23. Replace the last occurrence of 8 with 80 in the array [8, 16, 24, 8, 32].
 //24 Given the array [2, 4, 6, 8, 10], insert 5 between 4 and 6.
 
@@ -379,18 +578,18 @@ console.log(arrI);
 
 
 
-let n=[1,3];
+// let n=[1,3];
 
-let m=[2,4];
+// let m=[2,4];
 
-let result = [];
+// let result = [];
 
-for (let i = 0; i < n.length; i++) {
-    result[result.length] = n[i];  // first array element
-    result[result.length] = m[i];  // second array element
-}
+// for (let i = 0; i < n.length; i++) {
+//     result[result.length] = n[i];  // first array element
+//     result[result.length] = m[i];  // second array element
+// }
 
-console.log(result);
+// console.log(result);
 
 
 
