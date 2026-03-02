@@ -7,6 +7,9 @@ for(let i=0;i<=10;i++){
 }
 
 
+
+
+
 for(let i=0;i<=10;i++){
     if(i==4){
         continue;
@@ -315,8 +318,8 @@ let arrI=[10, 20, 30];
 arrI[arrI[0].length]=99
 console.log(arrI);
 
-
 // 6.Remove the last element from the array [2, 4, 6, 8, 10].
+
 
 
 

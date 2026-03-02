@@ -1,45 +1,9 @@
-// // let fruits=["apple","orange","grapes"];
+ let fruits=["apple","orange","grapes"];
 
-// // let result=fruits.filter((e)=>{
-// //   return e==="grapes"
-// // })
-// // console.log(result);
-
-// /*⃣ Student Registration Form Validation 
-
-// You are building a student registration system. 
-// A student enters their full name with extra spaces. 
-// Convert the name to uppercase and remove extra spaces. 
-// Find the total length of the cleaned name. 
-// Display the first character of the name. */
-
-
-// // let studentName="aadhi ";
-
-// // let result=studentName.toUpperCase().trim();
-// // let totalLength=result.length;
-// // let character=result.charAt(0)
-// // console.log(totalLength);
-// // console.log(character);
-
-// /*2⃣ Email Username Extractor 
-// A user enters their email: "ramprasad@gmail.com". 
-// Extract only the username (before @). 
-// Convert the username to lowercase. 
-// Display the length of the username. */
-
-
-// // sentence first letter captilaize:-
-// let name="react is a javascript library";
-// let name1=name.split(" ");
-// console.log(name1);
-
-
-// let result =name1.map((e)=>e.charAt(0).toUpperCase()+e.slice(1).toLowerCase());
-// console.log(result);
-
-// console.log(result.join(' '));
-
+ let result=fruits.filter((e)=>{
+ return e==="grapes"
+ })
+ console.log(result);
 
 
 // 1⃣ Student Registration Form Validation 
@@ -75,6 +39,7 @@ const position=user.indexOf('@')
 const exact=user.substring(0,position);
 const low=exact.toLowerCase();
 console.log(low.length);
+
 
 
 // 3⃣ Product Code Formatter 
