@@ -404,3 +404,187 @@ let arr_key=Object.keys(details);
 console.log(arr_key);
 
 let arr_values=Object.values(details);
+
+/*20 Object Problem Tasks (Beginner 
+Friendly) */
+//1. Create an object student with name, age, and grade. Print all values. 
+
+const studentO={
+    name:"ganga",
+    age:22,
+    grade:"A"
+}
+console.log(studentO);
+
+//2. Create an object car with brand, model, year. Print only the brand. 
+
+const carO={
+    brand:"BMW",
+    model:"uniquie",
+    year:2026
+}
+console.log(carO.brand);
+
+//3. Create an object mobile with 3 properties and add one new property  
+const mobileO={
+    name:"vivo",
+    memory:"256 ram"
+}
+console.log(mobileO);
+mobileO.price=50000
+console.log(mobileO);
+
+//4. Create a book object and change its price property to a new value. 
+
+const bookO={
+    name:'power of money',
+    price:500
+
+}
+console.log(bookO);
+bookO.price=1000
+//5. Create an object employee and check if the key "salary" exists 
+// using in operator. 
+
+const employeeO={
+    name:"ganga",
+    salary:30000
+}
+if('salary' in employeeO){
+    console.log("salary exists");
+}
+else{
+    console.log("salary not exists");
+}
+
+
+
+// 6. Create an object product and delete the discount property using 
+// delete. 
+const deleteO={
+    name:"ganga",
+    motivate:"self",
+    lazy:"off mode" 
+}
+delete deleteO.lazy
+console.log(deleteO);
+
+
+
+//7. Create an object user with name and email. Print all keys using 
+//for…in loop. 
+ const userO={
+    name:"ganga",
+    email:"gayathriganga042gmail.com"
+ }
+  for(u in userO){
+    console.log(u, userO[u]);
+    
+  }
+ 
+
+
+//8. Create an object dog with breed and age. Print "Puppy" if age < 2. 
+
+
+const dogO={
+    bread:"no",
+    age:1
+}
+if(dogO.age<2){
+    console.log("puppy");
+    
+}
+else{
+    console.log(" not they dog");
+    
+}
+//9. Create an object calculator with two numbers and print their sum. 
+
+const calculatorO={
+    a:10,
+    b:20
+}
+console.log(calculatorO.a+calculatorO.b);
+
+//10. Create an object person with firstName and lastName. Print full 
+// name. 
+
+const perosnO={
+    fName:"ganga",
+    lName:"k"
+}
+console.log(perosnO.fName+' '+perosnO.lName);
+
+//11. Create an object marks with 5 subject marks. Find the total using 
+//loop. 
+const marksO={
+    tamil:98,
+    english:85,
+    maths:89,
+    science:78,
+    social:89
+}
+let totalO=0;
+for(mark in marksO){
+    totalO+=marksO[mark]
+
+}
+console.log(totalO);
+
+//12. Create an object bike and check if it has color property. 
+
+const bikeO={
+    name:"royal",
+    color:"black"
+}
+if('color' in bikeO){
+    console.log("color is include");
+}
+else{
+    console.log("not colour");
+    
+}
+//13. Create an object movie with title and rating. Print "Hit" if rating > 8. 
+
+const movieO={
+    title:"stranger thinhs",
+    ratingO:10
+}
+if(movieO.ratingO>8){
+    console.log("hit very intersteng");
+    
+}
+
+
+//14. Create an object account with balance. Add ₹500 and print updated 
+//balance. 
+
+const acc={
+    amt:500
+}
+acc.amt+=1000;
+console.log(acc);
+
+//15. Create an object player with 3 stats. Print the highest stat value. 
+
+const playO={
+    g:56,
+    g1:58
+}
+const val=Object.values(playO);
+const re=Math.max(...playO)
+console.log(re);
+
+
+
+
+
+/*16. Create an object game and print how many keys it has. 
+17. Create an object course and update the duration property. 
+18. Create an object teacher with name and subject. Print: "Teacher 
+teaches subject". 
+19. Create an object settings with theme and fontSize. Change theme 
+to "dark". 
+20. Create an object shopItem and check if price > 100. Print 
+"Expensive" or "Cheap". */

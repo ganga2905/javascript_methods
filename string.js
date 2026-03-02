@@ -1,33 +1,85 @@
-// let fruits=["apple","orange","grapes"];
+// // let fruits=["apple","orange","grapes"];
 
-// let result=fruits.filter((e)=>{
-//   return e==="grapes"
-// })
+// // let result=fruits.filter((e)=>{
+// //   return e==="grapes"
+// // })
+// // console.log(result);
+
+// /*⃣ Student Registration Form Validation 
+
+// You are building a student registration system. 
+// A student enters their full name with extra spaces. 
+// Convert the name to uppercase and remove extra spaces. 
+// Find the total length of the cleaned name. 
+// Display the first character of the name. */
+
+
+// // let studentName="aadhi ";
+
+// // let result=studentName.toUpperCase().trim();
+// // let totalLength=result.length;
+// // let character=result.charAt(0)
+// // console.log(totalLength);
+// // console.log(character);
+
+// /*2⃣ Email Username Extractor 
+// A user enters their email: "ramprasad@gmail.com". 
+// Extract only the username (before @). 
+// Convert the username to lowercase. 
+// Display the length of the username. */
+
+
+// // sentence first letter captilaize:-
+// let name="react is a javascript library";
+// let name1=name.split(" ");
+// console.log(name1);
+
+
+// let result =name1.map((e)=>e.charAt(0).toUpperCase()+e.slice(1).toLowerCase());
 // console.log(result);
 
-/*⃣ Student Registration Form Validation 
+// console.log(result.join(' '));
 
+
+/*
+1⃣ Student Registration Form Validation 
 You are building a student registration system. 
 A student enters their full name with extra spaces. 
 Convert the name to uppercase and remove extra spaces. 
 Find the total length of the cleaned name. 
-Display the first character of the name. */
-
-
-let studentName="aadhi ";
-
-let result=studentName.toUpperCase().trim();
-let totalLength=result.length;
-let character=result.charAt(0)
-console.log(totalLength);
-console.log(character);
-
-/*2⃣ Email Username Extractor 
+Display the first character of the name. 
+(Use: trim(), toUpperCase(), length, charAt()) 
+2⃣ Email Username Extractor 
 A user enters their email: "ramprasad@gmail.com". 
 Extract only the username (before @). 
 Convert the username to lowercase. 
-Display the length of the username. */
-
-
-
-
+Display the length of the username. 
+(Use: substring(), toLowerCase(), length) 
+3⃣ Product Code Formatter 
+A product code is entered as " ab123cd ". 
+Remove extra spaces. 
+Convert it to uppercase. 
+Join it with "SKU-" in front of it. 
+Display the final formatted code. 
+(Use: trim(), toUpperCase(), concat()) 
+4⃣ Sentence Word Counter 
+A user enters a sentence: "React is very powerful library". 
+Split the sentence into words. 
+Find how many words are there. 
+Display the first word in uppercase. 
+(Use: split(), length, toUpperCase()) 
+5⃣ File Name Processor 
+A file name is given as "report_final_version.pdf". 
+Split the file name using "_". 
+Join the words using space " ". 
+Convert the result to lowercase. 
+Display the formatted file name. 
+(Use: split(), join(), toLowerCase()) 
+6⃣ Password Hint Generator 
+User enters a password " Welcome123 ". 
+Remove spaces. 
+Extract the first 4 characters. 
+Convert them to lowercase. 
+Display the hint. 
+(Use: trim(), substring(), toLowerCase()) 
+*/
