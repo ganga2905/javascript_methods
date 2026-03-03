@@ -558,20 +558,113 @@ console.log(a31);
 
 // 22.Insert the element 7 at the end of the array [1, 2, 3, 4, 5, 6].
 
-
-
-
-
+let a32=[1, 2, 3, 4, 5, 6];
+a32[a32.length]=7;
+console.log(a32);
 //23. Replace the last occurrence of 8 with 80 in the array [8, 16, 24, 8, 32].
+let a33=[8, 16, 24, 8, 32];
+
+for(let i=a33.length-1;i>=0;i--){
+    if(a33[i]===8){
+        a33[i]=80
+        break;
+    }
+
+}
+//  a33[a33.length-2]=80;
+ console.log(a33);
+ 
+
 //24 Given the array [2, 4, 6, 8, 10], insert 5 between 4 and 6.
 
+let a34=[2, 4, 6, 8, 10];
+
+let a35=[];
+
+for(let i=0;i<a34.length;i++){
+    if(a34[i]===6){
+        a35[a35.length]=5
+    }
+    a35[a35.length]=a34[i]
+}
+console.log(a35);
+
+
 //25. Remove all elements from the array [11, 22, 33, 44, 55].
+
+let a36=[11, 22, 33, 44, 55];
+
+a36.length=0;
+
+console.log(a36);
+
+
 // 26.Replace the first element in the array [7, 14, 21] with 10
+
+let a37=[7, 14, 21];
+
+for(let i=0;i<a37.length;i++){
+    if(i===0){
+        a37[0]=10
+    }
+}
+console.log(a37);
+
+
 // 27.Add the elements 1 and 2 at the end of the array [3, 4, 5]
+
+
+let a38 =[3, 4, 5];
+let a39=[1,2];
+let a40=[]
+for(let i=0;i<a39.length;i++){
+    a40[a40.length]=a39[i]
+}
+for(let i=0;i<a38.length;i++){
+       a40[a40.length]=a38[i]
+}
+console.log(a40);
+
+
 // 28.Remove the element at index 0 from the array [50, 40, 30, 20, 10].
+
+let a41= [50, 40, 30, 20, 10];
+
+let a42=[];
+
+for(let i=0;i<a41.length;i++){
+    if(i===0){
+        continue;
+    }
+    a42[a42.length]=a41[i]
+}
+console.log(a42);
+
 // 29.Replace all occurrences of 6 with 60 in the array [6, 12, 18, 6, 30].
+let a43=[6, 12, 18, 6, 30];
+let a44=[]
+ 
+for(let i=0;i<a43.length;i++){
+    if(a43[i]===6){
+        a44[a44.length]=60
+    }
+    else{
+        a44[a44.length]=a43[i]
+    }
+    
+}
+console.log(a44);
+
+
+
 
 // 30.Given the array [3, 6, 9, 12, 15], insert 7 at index 3.
+
+let a45=[3, 6, 9, 12, 15];
+
+ a45[3]=7
+ console.log(a45);
+ 
 
 
 
