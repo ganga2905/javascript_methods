@@ -64,7 +64,7 @@ console.log(twoSum([2,7,11,15],9))*/
 
 
 // reverese number:-
-
+/*
 let a=[50,40,30,20,10];
 
 let b=[];
@@ -115,5 +115,11 @@ for(let i=1;i<=e;i++){
     f=f*i
 }
 console.log(f);
+
+*/
+
+
+
+
 
 
