@@ -655,6 +655,14 @@ let word1=word.split(" ");
 console.log(word1.reverse().join(' '));
 
 
+let result1=[];
+
+for(let i=word.length-1;i>=0;i++){
+    result1[result1.length]=word[i]
+
+}
+
+
 
 
 
