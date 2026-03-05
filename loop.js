@@ -682,6 +682,34 @@ let a45=[3, 6, 9, 12, 15];
 // console.log(result);
 
 
+// find the largest number :-
+
+let largerstNum=[10,20,101,20,50];
+
+let max=largerstNum[0]
+for(let i=0;i<largerstNum.length;i++){
+    if(largerstNum[i]>max){
+        max=largerstNum[i]
+    }
+}
+console.log(max);
+
+// find second largest number:-
+
+
+var addTwoNumbers = function(l1, l2) {
+    for(let i=l1.length-1;i>=0;i--){
+        for(let k=l2.length-1;k>=0;k--){
+            num = l1[i]+l2[k]; 
+            return [i,k]
+
+        }
+    }
+    
+};
+console.log(addTwoNumbers([2,4,3],[5,6,4]));
+
+
 
 
 
