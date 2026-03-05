@@ -4,73 +4,25 @@
 //  where only one letter can change at a time and each intermediate word must exist in wordList.*/
 
 
-
-// //  let arr=[1,2,[3,4],5];
-
-
-// //  let output=[];
-
-// //  for(let i=0;i<arr.length;i++){
-// //     if(arr.length===3){
-// //         output[output.length]=arr[2][0][1]
-// //     }
-// //     output[output.length]=arr[i]
-// //  }
-// //  console.log(output);
-
-
-//   let arr1 = [[1,2,3,4,5],[6,7,8]]
-//   let newarr =[]
+  let arr1 = [[1,2,3,4,5],[6,7,8]]
+  let newarr =[]
   
-//  for(let i=0;i<arr1.length;i++){
-//     for(let j=0;j<arr1[i].length;j++){
-//         // newarr +=arr1[j][i]
-//         newarr[newarr.length]=arr1[j][i]
-//     }
-
-//  }
-//  console.log(newarr)
-
- 
- //1. Reverse a Number
- /*Given a number, reverse it.
-Example: 1234 → 4321*/
-
-// let n = 1234;
-// let rev = 0;
-
-// while (n > 0) {
-//     let digit = n % 10;
-//     rev = rev * 10 + digit;
-//     n = Math.floor(n / 10);
-// }
-
-// console.log("Reversed Number:", rev);
-
-/*var twoSum = function(nums, target) {
-    let num=0
-
-    for(let i=0;i<nums.length;i++){
-        if(num===target){
-            break;
-        }
-        num+=nums[i]        
-
+  for(let i=0;i<arr1.length;i++){
+    for(let j=0;j<arr1[i].length;j++){
+      newarr[newarr.length]=arr1[i][j]
     }
-    return num
-     
-};
-console.log(twoSum([2,7,11,15],9))*/
 
-
-// reverese number:-
-/*
+  }
+  console.log(newarr);
+   
+ //1. Reverse a Number
+ 
 let a=[50,40,30,20,10];
 
 let b=[];
 
-// b=a.reverse();
-// console.log(b);
+b=a.reverse();
+console.log(b);
 for(let i=a.length-1;i>=0;i--){
     b[b.length]=a[i]
 
@@ -115,41 +67,41 @@ for(let i=1;i<=e;i++){
     f=f*i
 }
 console.log(f);
-*/
+
     
 //1. Reverse a Number 
 
 
-let a1=[10,20,30,40,50];
+// let a1=[10,20,30,40,50];
 
 
-let a2=[];
+// let a2=[];
 
-for(let i=a1.length-1;i>=0;i--){
-    a2[a2.length]=a1[i]
+// for(let i=a1.length-1;i>=0;i--){
+//     a2[a2.length]=a1[i]
 
-}
-console.log(a2);
+// }
+// console.log(a2);
 
 
 
 //2. Palindrome Number 
 
-let a3=2002;
+// let a3=2002;
 
-let a4='';
+// let a4='';
 
 
-for(let i =a3.length-1;i>=0;i++ ){
-    a4+=a3[i]
-}
-if(a3==a4){
+// for(let i =a3.length-1;i>=0;i++ ){
+//     a4+=a3[i]
+// }
+// if(a3==a4){
      
-   console.log(true);
-}
-else{
-   console.log( false);
-}
+//    console.log(true);
+// }
+// else{
+//    console.log( false);
+// }
 
  
 /*3. Fibonacci Series 
@@ -622,53 +574,45 @@ Tag us on your success stories:
 
 
 
-let num1=[4,5,6,20,2];
+// let num1=[4,5,6,20,2];
 
-let target=10;
+// let target=10;
 
-for(let i=0;i<num1.length;i++){
-    for(let j=i+1;j<num1.length;j++){
-      if(num1[i]+num1[j]==target){
-        console.log(i,j);
+// for(let i=0;i<num1.length;i++){
+//     for(let j=i+1;j<num1.length;j++){
+//       if(num1[i]+num1[j]==target){
+//         console.log(i,j);
         
 
-      }
-    }
-}
+//       }
+//     }
+// }
 
-let num2=[1,3,5,0,4,0];
-
-
-
-let name="ganga";
-let result=''
-
-for(let i=name.length-1;i>=0;i--){
-  result+=name[i]
-}
-console.log(result);
-
-
-let word="javascript is easy";
-
-let word1=word.split(" ");
-console.log(word1.reverse().join(' '));
-
-
-let result1=[];
-
-for(let i=word.length-1;i>=0;i++){
-    result1[result1.length]=word[i]
-
-}
+// let num2=[1,3,5,0,4,0];
 
 
 
+// let name="ganga";
+// let result=''
+
+// for(let i=name.length-1;i>=0;i--){
+//   result+=name[i]
+// }
+// console.log(result);
 
 
+// let word="javascript is easy";
+
+// let word1=word.split(" ");
+// console.log(word1.reverse().join(' '));
 
 
+// let result1=[];
 
+// for(let i=word.length-1;i>=0;i++){
+//     result1[result1.length]=word[i]
+
+// }
 
 
 
