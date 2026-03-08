@@ -4,6 +4,7 @@
 //  where only one letter can change at a time and each intermediate word must exist in wordList.*/
 
 
+
   let arr1 = [[1,2,3,4,5],[6,7,8]]
   let newarr =[]
   
@@ -31,77 +32,55 @@ console.log(b);
 
 // Palindrome Number :-
 let c = [1,0,1];
-let isPalindrome = true;
+let d=[];
+for(let i=c.length-1;i>=0;i--){
+  d[d.length]=c[i]
 
-for(let i = 0; i < c.length/2; i++){
-    if(c[i] !== c[c.length - 1 - i]){
-        isPalindrome = false;
-        break;
-    }
+}
+if(c==d){
+  console.log("palintrome");
+  
 }
 
-console.log(isPalindrome ? "palindrome" : "not palindrome");
-// let c=[1,0,1];
 
-// let d=[];
+// factrioal number:-
+let fac=6;
 
-// for(let i=0;i<c.length;i++){
-//     d[d.length]=c[i];
-// }
-// console.log(d);
-
-//  if(c===d){
-//         console.log("palindrome");
-        
-//     }
-//     else {
-//         console.log("not palindrome");
-        
-//     }
-
-
-let e=5; //Factorial of Number 
-
-let f=1;
-for(let i=1;i<=e;i++){
-    f=f*i
+let result=1;
+for(let i=2;i<=fac;i++){
+  result=result*i
 }
-console.log(f);
+console.log(result);
+
 
     
 //1. Reverse a Number 
 
 
-// let a1=[10,20,30,40,50];
+let a1=[10,20,30,40,50];
 
 
-// let a2=[];
+ let a2=[];
 
-// for(let i=a1.length-1;i>=0;i--){
-//     a2[a2.length]=a1[i]
+for(let i=a1.length-1;i>=0;i--){
+   a2[a2.length]=a1[i]
 
-// }
-// console.log(a2);
-
-
-
+ }
+console.log("reverse number",a2);
 //2. Palindrome Number 
 
-// let a3=2002;
+let a3=2002;
 
-// let a4='';
+let a4=a3.toString();
+a4.split("").reverse().join("");
+if(a3==a4){
+  console.log("palindrome");
+}
+else{
+  console.log("not a palindrome");
+  
+}
 
-
-// for(let i =a3.length-1;i>=0;i++ ){
-//     a4+=a3[i]
-// }
-// if(a3==a4){
-     
-//    console.log(true);
-// }
-// else{
-//    console.log( false);
-// }
 
  
 /*3. Fibonacci Series 
