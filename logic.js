@@ -84,17 +84,7 @@ else{
 
  
 /*3. Fibonacci Series 
-{ 
- a = 0 
- b = 1 
- for i = 1 to n 
- { 
-  print a 
-  c = a + b 
-  a = b 
-  b = c 
- } 
-} 
+
  
 4. Factorial of Number 
 { 
