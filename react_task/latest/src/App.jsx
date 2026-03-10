@@ -1,7 +1,5 @@
-import { useState } from 'react'
 
 import './App.css'
-import AgeForm from './components/AgeForm'
 import LoginSignup from './components/LoginSignUp/LoginSignup'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import Login from './components/Login/Login'

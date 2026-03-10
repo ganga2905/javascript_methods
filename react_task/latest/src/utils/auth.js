@@ -1,4 +1,4 @@
-export const saveUser=(email,password){
+export const saveUser=(email,password)=>{
     const user={email,password}
     localStorage.setItem('user',JSON.stringify(user))
 

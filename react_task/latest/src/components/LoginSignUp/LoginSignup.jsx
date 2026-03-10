@@ -52,7 +52,7 @@ const LoginSignup = () => {
                <button type='submit'>
             SignUp
           </button>
-          <button type='submit' onClick={navigate('/login')}>
+          <button type='button' onClick={()=>navigate('/login')}>
             Login
           </button>
           </div>
