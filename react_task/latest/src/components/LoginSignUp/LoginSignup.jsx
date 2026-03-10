@@ -2,6 +2,7 @@ import React from 'react'
 import './LoginSignup.css'
 import { useState } from 'react'
 import { useNavigate } from "react-router-dom";
+import { saveUser } from '../../utils/auth';
 
 
 const LoginSignup = () => {
@@ -16,6 +17,7 @@ const LoginSignup = () => {
   const handleSubmit=(e)=>{
     e.preventDefault()
 
+    saveUser(email,password)
     console.log(name,email);
     navigate('/login')
   }
