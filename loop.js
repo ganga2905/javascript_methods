@@ -890,8 +890,10 @@ let aS = 5;
 let bS = 9;
 
 let cS=aS;
+aS=bS;
+bS=cS;
 
-
+console.log(aS,bS);
 
 /*
 
@@ -901,12 +903,41 @@ let str = "hello";
 Expected Output
 
 olleh
+*/
+let strC = "hello";
+let ou=''
+
+for(let i=strC.length-1;i>=0;i--){
+    ou+=strC[i]
+
+}
+
+let rev=strC.split('').reverse().join('');
+console.log(rev);
+
+/*
+
 3️⃣ Find Largest Number in Array
 let arr = [4,7,2,9,1];
 
 Expected Output
 
 9
+
+*/
+let arrF = [4,7,2,9,1];
+
+
+let maxF=arrF[0];
+
+for(let i=0;i<arrF.length;i++){
+    if(arrF[i]>maxF){
+        maxF=arrF[i]
+    }
+}
+console.log(maxF);
+
+/*
 4️⃣ Count Even Numbers
 let arr = [2,5,8,3,6];
 
@@ -915,31 +946,108 @@ Expected Output
 3
 
 (Even numbers: 2,8,6)
+*/
 
+let arrEv = [2,5,8,3,6];
+let countN=0;
+
+for(let i=0;i<=arrEv.length;i++){
+    if(arrEv[i]%2==0){
+        countN++
+    }
+}
+
+console.log(countN);
+
+
+/*
 5️⃣ Reverse an Array
 let arr = [1,2,3,4];
 
 Expected Output
 
 [4,3,2,1]
+
+*/
+let arrRe = [1,2,3,4];
+let outR=[];
+
+for(let i=arrRe.length-1;i>=0;i--){
+    outR[outR.length] = arrRe[i]
+}
+console.log(outR);
+
+
+/*
+
 6️⃣ Sort Array Using Loop (without sort())
 let arr = [5,3,8,1];
 
 Expected Output
 
 [1,3,5,8]
+
+*/
+let arrSo = [5,3,8,1];
+
+for(let i=0;i<arrSo.length;i++){
+    for(let k=i+1;k<arrSo.length;k++){
+        if(arrSo[i]>arrSo[k]){
+            let tem=arrSo[i];
+            arrSo[i]=arrSo[k];
+            arrSo[k]=tem
+        }
+    }
+}
+console.log(arrSo);
+
+
+/*
 7️⃣ Find Second Largest Number
 let arr = [10,5,8,20,15];
 
 Expected Output
 
 15
+*/
+let arrLs = [10,5,8,20,15];
+
+let maxS=arrLs[0];
+for(let i=arrLs.length-2;i>=0;i--){
+    if(arrLs[i]>maxS){
+          maxS=arrLs[i]
+    }
+}
+
+console.log(maxS);
+
+
+
+
+
+
+/*
 8️⃣ Remove Duplicates from Array
 let arr = [1,2,2,3,4,4];
 
 Expected Output
 
 [1,2,3,4]
+
+*/
+let arrD = [1,2,2,3,4,4];
+
+for(let i=0;i<arrD.length;i++){
+    for(let k=i+1;k<arrD.length;k++){
+        if(arrD[i]==arrD[k]){
+            continue;
+        }
+    }
+}
+console.log(arrD);
+
+/*
+
 9️⃣ Check Palindrome
 let str = "madam";
 
@@ -949,6 +1057,27 @@ true
 
 Example palindrome:
 madam, level
+*/
+let strP="madam";
+let reP=strP.split('').reverse().join('');
+
+if(strP===reP){
+     return true
+}
+else{
+    return false
+}
+
+ let strp1="level";
+ let reP1=strp1.split('').reverse().join('');
+ if(strp1==reP1){
+    return true
+ }
+ else{
+    return false
+ }
+/*
+
 
 🔟 Anagram Check (Very Famous)
 let str1 = "listen";
@@ -957,3 +1086,9 @@ let str2 = "silent";
 Expected Output
 
 true*/
+
+let str1 = "listen";
+let str2 = "silent";
+
+
+
