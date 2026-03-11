@@ -15,6 +15,10 @@ const Login = () => {
         e.preventDefault();
 
         const storedUser=getUser();
+        if(password!==confirmPassword){
+alert("Password not match")
+return
+}
         if(storedUser&&
             storedUser.email===email&&
             storedUser.password===password
