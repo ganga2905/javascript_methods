@@ -1092,3 +1092,77 @@ let str2 = "silent";
 
 
 
+/*1️⃣ Reverse a String (Loop use panni)
+let str = "javascript";
+
+Expected Output
+
+tpircsavaj
+
+👉 split() use panna koodathu. Loop use pannunga.
+
+2️⃣ Fibonacci Series
+n = 6
+
+Expected Output
+
+0 1 1 2 3 5
+
+👉 Logic important question.
+
+3️⃣ Prime Number Check
+let num = 7;
+
+Expected Output
+
+Prime
+
+Example
+2,3,5,7,11 → Prime numbers
+
+4️⃣ Find Largest Number
+let arr = [12,45,7,23,56];
+
+Expected Output
+
+56
+5️⃣ Find Second Largest Number
+let arr = [10,20,5,8,25];
+
+Expected Output
+
+20
+6️⃣ Remove Duplicates
+let arr = [1,2,2,3,4,4,5];
+
+Expected Output
+
+[1,2,3,4,5]
+7️⃣ Count Vowels in String
+let str = "hello world";
+
+Expected Output
+
+3
+
+(vowels: e,o,o)
+
+8️⃣ Sum of Array Elements
+let arr = [2,4,6,8];
+
+Expected Output
+
+20
+9️⃣ Check Palindrome
+let str = "level";
+
+Expected Output
+
+true
+🔟 Anagram Check
+let str1 = "listen";
+let str2 = "silent";
+
+Expected Output
+
+true*/
