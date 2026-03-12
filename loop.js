@@ -1,59 +1,57 @@
 
-// for(let i=0;i<=10;i++){
-//     if(i==5){
-//         break;
-//     }
-//     console.log(i);
-// }
+for(let i=0;i<=10;i++){
+     if(i==5){
+        break;
+         }
+   console.log(i);
+ }
 
 
-// for(let i=0;i<=10;i++){
-//     if(i==4){
-//         continue;
-//     }
-//     console.log(i);
+ for(let i=0;i<=10;i++){
+     if(i==4){
+        continue;
+    }
+     console.log(i);
     
-// }
+ }
 
-// let group=[
-//     ["ram","sam","ravi"],
-//     ["kumar","tiya",]
-// ]
-// /*
-// Intermediate Array Questions (10 
-// Questions) */
+ let group=[
+     ["ram","sam","ravi"],
+    ["kumar","tiya",]
+ ]
+ /*
+ Intermediate Array Questions (10 
+ Questions) */
 // 1. 
 
-// // Given an array of marks, write a program to find the highest and lowest value without 
-// // using Math.max or Math.min. 
+ // Given an array of marks, write a program to find the highest and lowest value without 
+// using Math.max or Math.min. 
 
 
-// // let num=[10,20,30,40,50,2];
+let num=[10,20,30,40,50,2];
 
-// // let max=num[0];
-// // // console.log(max);
+let max1=num[0];
 
-// // for(let i=1;i<=num.length;i++){
-// //     if(num[i]>max){
-// //         max=num[i]
-// //     }
-// // }
-// // console.log(max);
+ console.log(max1);
 
-// // let min=num[0];
-// // for(let i=1;i<=num.length;i++){
-// //     if(num[i]<min){
-// //         min=num[i]
-// //     }
-// // }
-// // console.log(min);
+ for(let i=0;i<num.length;i++){
+     if(num[i]>max1){
+         max1=num[i]
+     }
+ }
+ console.log(max1);
 
+ let min=num[0];
+ for(let i=0;i<num.length;i++){
+    if(num[i]<min){
+        min=num[i]
+     }
+}
+console.log(min);
 
-
-
-// // let max=Math.max(...num);
-// // let mini=Math.min(...num);
-// // console.log(max,mini);
+let max2=Math.max(...num);
+let mini2=Math.min(...num);
+console.log(max2,mini2);
 
 
 // // 2. 
@@ -911,6 +909,7 @@ for(let i=strC.length-1;i>=0;i--){
     ou+=strC[i]
 
 }
+
 
 let rev=strC.split('').reverse().join('');
 console.log(rev);
