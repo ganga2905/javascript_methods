@@ -109,3 +109,57 @@ let req=reT.substring(0,4);
 
 console.log(req.toLowerCase());
 
+
+
+let num=123
+
+let num1 =String(num)
+console.log(num,num1, typeof num1);
+
+ // 1.Given the array [1, 2, 4, 5], 
+ // insert the number 3 between 4 and 5.
+
+ let array1=[1, 2, 4, 5]
+ for(let i=0;i<array1.length;i++){
+    if(array1[i]==4){
+        array1[array1.length]=array1[array1.length]=3
+    }
+
+}
+console.log(array1);
+
+ //15. Insert the elements 25 and 30 at 
+ // the end of the array [10, 20].
+
+let a19=[10, 20];
+a19[2]=25;
+a19[3]=30
+// a19[a19.length]=25
+// a19[a19.length]=30;
+console.log(a19);
+
+
+
+let a33 = [8, 16, 24, 8, 32];
+
+let index = a33.lastIndexOf(8);
+
+if(index !== -1){
+    a33[index] = 80;
+}
+
+console.log(a33);
+
+
+
+let nesARR=[[1,2,3],[4,5,6]];
+
+
+let reN=[];
+
+for(let i=0;i<nesARR.length;i++){
+    for(let j=0;j<nesARR[i].length;j++){
+        reN[reN.length]=nesARR[i][j]
+    }
+}
+console.log(reN);
