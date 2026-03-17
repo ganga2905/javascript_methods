@@ -159,3 +159,24 @@ console.log(result4);
 let num29=[3, 6, 9, 12, 15];
 num29.splice(3,0,7);
 console.log(num29);
+
+
+
+// words max length identigy:-
+
+
+function largeLength(word){
+   let max=word.split(' ');
+   console.log(max[0],max[1]);
+   
+
+   let large=max[0];
+   for(let i=0;i<max.length;i++){
+      if(max[i].length>large.length){
+         large=max[i]
+      }
+   }
+   return large
+
+}
+console.log(largeLength("mern stack developer"));
