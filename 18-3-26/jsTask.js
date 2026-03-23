@@ -1,4 +1,4 @@
-// 🟢 EASY LEVEL (Must Know Basics)
+/*// 🟢 EASY LEVEL (Must Know Basics)
 // 🔹 Arrays
 
 // Find largest number in array
@@ -145,7 +145,7 @@ for(let i=name.length-1;i>=0;i--){
 }
 console.log(rev);
 
-*/
+
 
 //Check palindrome:-
 
@@ -164,30 +164,125 @@ else{
     return console.log("false")
 }
 
+//Count vowels & consonants
+
+const userName="ganga";
+let vowel=0;
+let consonants=0;
+let letterV=['a',"e","i","o","u"];
+
+for(let i=0;i<userName.length;i++){
+    if(letterV.includes(userName[i])){
+        vowel++
+    }
+    else{
+        consonants++
+    }
+}
+
+console.log(vowel,consonants);*/
+
+//Count characters frequency
+/*
+let name1="ganga";
+
+let freq={};
+
+for(let i=0;i<name1.length;i++){
+    let char=name1[i]
+    if(freq[char]){
+        freq[char]++
+    }
+    else{
+        freq[char]=1
+    }
+   
+}
+ console.log(freq);
+
+
+//Remove spaces
+
+let space=" ganga k";
+console.log(space.length);
+space.trim();
+console.log(space.length);
+
+
+
+//Convert first letter to uppercase
+
+
+let upper="ganga";
+
+for(let i=0;i<upper.length;i++){
+    if(upper[i][0].toUpperCase()){
+        upper=upper[i]
+    }
+}
+console.log(upper);
+
+
+
+//Find longest word in string
+
+let long="mern stack developer is best ";
+
+let str=long.split('');
+
+let max=str[0];
+for(let i=0;i<str.length;i++){
+    if(str[i]>max){
+        max=str[i]
+    }
+}
+console.log(max);
+
+
+
+//Check anagram
+
+let word1="listen";
+
+let word2="silent";
+
+*/
+
+
 
 /*
-Count vowels & consonants
-
-Count characters frequency
-
-Remove spaces
-
-Convert first letter to uppercase
-
-Find longest word in string
-
-Check anagram
 
 Count words in sentence
 
 Remove duplicate characters
+*/
+// 🟡 MEDIUM LEVEL (Interview Favorite 🔥)
+// 🔹 Arrays
 
-🟡 MEDIUM LEVEL (Interview Favorite 🔥)
-🔹 Arrays
 
-Move all zeros to end
-👉 [0,1,0,3,12] → [1,3,12,0,0]
+// Move all zeros to end
+// 👉 [0,1,0,3,12] → [1,3,12,0,0]
 
+
+let num = [1,2,0,5,0,22,0,4,0,70];
+
+let j = 0;
+
+for(let i = 0; i < num.length; i++){
+    if(num[i] !== 0){
+        // swap
+        let temp = num[i];
+        num[i] = num[j];
+        num[j] = temp;
+        
+        j++;
+    }
+}
+
+console.log(num);
+
+
+/*
 Find intersection of two arrays
 👉 [1,2,3] & [2,3,4] → [2,3]
 
