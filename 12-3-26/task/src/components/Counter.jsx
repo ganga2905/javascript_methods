@@ -8,12 +8,9 @@ const Counter=()=>{
 
     const increase=()=>{
         setCount(count=>count+1)
-
-
     }
         const decrease=()=>{
         setCount(count=>count-1)
-
         
     }
         const reset=()=>{
