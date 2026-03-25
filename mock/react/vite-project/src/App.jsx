@@ -7,8 +7,15 @@ import ProductForm from './components/ProductForm'
 import Todo from './components/Todo'
 import Weather from './components/Weather'
 import Profile from './components/Profile'
+import Dashboard from './components/Dashboard'
 
 const App = () => {
+
+  const user={
+    name:"ganga",
+    isLoggedIn:true,
+    role:"admin"
+  }
   return (
     <div>
       <Counter/>
@@ -19,6 +26,7 @@ const App = () => {
       <Todo/>
       <Weather/>
       <Profile/>
+      <Dashboard user={user}/>
     </div>
   )
 }
