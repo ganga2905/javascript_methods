@@ -5,6 +5,8 @@ import Form from './components/Form'
 import EmployeeTable from './components/EmployeeTable'
 import ProductForm from './components/ProductForm'
 import Todo from './components/Todo'
+import Weather from './components/Weather'
+import Profile from './components/Profile'
 
 const App = () => {
   return (
@@ -15,6 +17,8 @@ const App = () => {
       <EmployeeTable/>
       <ProductForm/>
       <Todo/>
+      <Weather/>
+      <Profile/>
     </div>
   )
 }
