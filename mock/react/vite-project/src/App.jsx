@@ -8,13 +8,15 @@ import Todo from './components/Todo'
 import Weather from './components/Weather'
 import Profile from './components/Profile'
 import Dashboard from './components/Dashboard'
+import DropDown from './components/DropDown'
+import DropDownCity from './components/DropDownCity'
 
 const App = () => {
 
   const user={
-    name:"ganga",
+    name:"ganga k",
     isLoggedIn:true,
-    role:"admin"
+    role:"user"
   }
   return (
     <div>
@@ -27,6 +29,8 @@ const App = () => {
       <Weather/>
       <Profile/>
       <Dashboard user={user}/>
+      <DropDown/>
+      <DropDownCity/>
     </div>
   )
 }
