@@ -55,6 +55,18 @@ console.log(palindrome1("ganga"));
 
 
 function  character(word){
+
+    let obj={};
+    for(let i=0;i<word.length;i++){
+        if(obj[word[i]]){
+            obj[word[i]]++
+        }
+        else{
+            obj[word[i]]=1
+        }
+    }
+    return obj
     
 
 }
+console.log(character("hello"));
